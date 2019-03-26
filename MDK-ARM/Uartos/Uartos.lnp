@@ -1,0 +1,26 @@
+--cpu Cortex-M4.fp
+"uartos\startup_stm32f303xe.o"
+"uartos\main.o"
+"uartos\stm32f3xx_it.o"
+"uartos\stm32f3xx_hal_msp.o"
+"uartos\stm32f3xx_hal_tim.o"
+"uartos\stm32f3xx_hal_tim_ex.o"
+"uartos\stm32f3xx_hal_uart.o"
+"uartos\stm32f3xx_hal_uart_ex.o"
+"uartos\stm32f3xx_hal.o"
+"uartos\stm32f3xx_hal_rcc.o"
+"uartos\stm32f3xx_hal_rcc_ex.o"
+"uartos\stm32f3xx_hal_gpio.o"
+"uartos\stm32f3xx_hal_dma.o"
+"uartos\stm32f3xx_hal_cortex.o"
+"uartos\stm32f3xx_hal_pwr.o"
+"uartos\stm32f3xx_hal_pwr_ex.o"
+"uartos\stm32f3xx_hal_flash.o"
+"uartos\stm32f3xx_hal_flash_ex.o"
+"uartos\stm32f3xx_hal_i2c.o"
+"uartos\stm32f3xx_hal_i2c_ex.o"
+"uartos\system_stm32f3xx.o"
+--library_type=microlib --strict --scatter "Uartos\Uartos.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Uartos.map" -o Uartos\Uartos.axf
